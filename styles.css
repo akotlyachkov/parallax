@@ -1,0 +1,24 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.placeholder {
+    height: 800px;
+    overflow: hidden;
+    border-bottom: 2px solid #eee;
+}
+
+.bg {
+    background: url('bg.jpg') center center;
+    height: 120%;
+    width: 120%;
+    position: relative;
+    left: -10%;
+    top: -10%;
+}
