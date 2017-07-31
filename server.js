@@ -6,10 +6,13 @@ const express = require('express'),
 
 app.use(express.static(__dirname));
 
+
+app.use('/page', function (req, res, next) {
+    res.sendFile('page.html', {root: __dirname});
+});
 app.use('/', function (req, res, next) {
     res.sendFile('index.html', {root: __dirname});
 });
-
 app.set('port', process.env.PORT || '3000');
 
 server.listen(app.get('port'), function () {
