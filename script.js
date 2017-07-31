@@ -23,7 +23,7 @@
 function LightParallax() {
     let instance, ratio, className;
 
-    LightParallax = function Universe() {
+    LightParallax = function LightParallax() {
         return instance;
     };
 
